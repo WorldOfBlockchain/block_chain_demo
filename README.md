@@ -11,9 +11,9 @@
   - MerkleRoot
 
 ## hash
-- SHA-256(SHA-256())
+- ```SHA-256( SHA-256() )```
 - input : char *
-- output string
+- output : string
 
 ## main
 - ```main.cpp```
