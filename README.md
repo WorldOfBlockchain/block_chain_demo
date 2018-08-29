@@ -6,14 +6,14 @@
 
 ## block
 - ```Class block``` has the components of a block
-  - PreBlockHash
-  - BlockHash
-  - MerkleRoot
+  - ```string PreBlockHash```
+  - ```string BlockHash```
+  - ```string MerkleRoot```
 
 ## hash
 - ```SHA-256( SHA-256() )```
-- input : char *
-- output : string
+- input : ```char *```
+- output : ```string```
 
 ## main
 - ```main.cpp```
