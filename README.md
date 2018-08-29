@@ -12,8 +12,8 @@
 
 ## hash
 - ```SHA-256( SHA-256() )```
-- input : ```char *```
-- output : ```string```
+  - input : ```char *```
+  - output : ```string```
 
 ## main
 - ```main.cpp```
