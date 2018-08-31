@@ -1,14 +1,15 @@
 #include "block.h"
 
-block::block(string PreBlockHash, string transactions):PreBlockHash(PreBlockHash), transactions(transactions){
-    const char *tmp = (PreBlockHash + transactions).c_str();
-    this->BlockHash = SHA_256((char*)tmp);
+BlockHeader::BlockHeader(string PreBlockHash, string MerkleRoot)
+:PreBlockHash(PreBlockHash), MerkleRoot(MerkleRoot){
+    const char *tmp = (PreBlockHash + MerkleRoot).c_str();
+    this->BlockHash = Double_SHA256((char *)tmp);
 }
 
-string block::get_PreBlockHash(){
+string BlockHeader::get_PreBlockHash(){
     return PreBlockHash;
 }
 
-string block::get_BlockHash(){
+string BlockHeader::get_BlockHash(){
     return BlockHash;
 }

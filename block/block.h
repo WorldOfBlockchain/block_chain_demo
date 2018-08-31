@@ -1,12 +1,17 @@
+#ifndef BLOCK_H
+#define BLOCK_H
 #include "../hash/SHA_256.h"
 
-class block{
+class BlockHeader{
 public:
-    block(string PreBlockHash, string transactions);
+    BlockHeader(string PreBlockHash, string MerkleRoot);
     string get_PreBlockHash();
     string get_BlockHash();
 private:
     string PreBlockHash;
     string BlockHash;
-    string transactions;
+    string MerkleRoot;
 };
+
+
+#endif

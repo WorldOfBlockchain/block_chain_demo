@@ -141,3 +141,7 @@ string SHA_256(char* data) {
 
 	return hashStr;
 }
+
+string Double_SHA256(char* data){
+	return SHA_256((char*)SHA_256(data).c_str());
+}

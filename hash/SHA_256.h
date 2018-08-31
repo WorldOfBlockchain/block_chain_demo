@@ -1,3 +1,6 @@
+#ifndef SHA_256_H
+#define SHA_256_H
+
 #include <iostream>
 #include <string>
 #include <string.h>
@@ -34,3 +37,6 @@ void SHA256Final(SHA256_CTX *ctx, uchar hash[]);
 
 string SHA_256(char* data);
 
+string Double_SHA256(char* data);
+
+#endif
